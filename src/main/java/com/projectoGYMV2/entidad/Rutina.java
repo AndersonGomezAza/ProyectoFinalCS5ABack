@@ -12,16 +12,18 @@ public class Rutina {
     
     private String nombreRutina;
     private String tiempoRutina;
+    private String caloriasRutina;
     private String descripcionRutina;
     
     public Rutina() {
         
     }
 
-    public Rutina(int idRutina, String nombreRutina, String tiempoRutina, String descripcionRutina) {
+    public Rutina(int idRutina, String nombreRutina, String tiempoRutina, String caloriasRutina, String descripcionRutina) {
         this.idRutina = idRutina;
         this.nombreRutina = nombreRutina;
         this.tiempoRutina = tiempoRutina;
+        this.caloriasRutina = caloriasRutina;
         this.descripcionRutina = descripcionRutina;
     }
 
@@ -55,6 +57,14 @@ public class Rutina {
 
     public void setDescripcionRutina(String descripcionRutina) {
         this.descripcionRutina = descripcionRutina;
+    }
+
+    public String getCaloriasRutina() {
+        return caloriasRutina;
+    }
+
+    public void setCaloriasRutina(String caloriasRutina) {
+        this.caloriasRutina = caloriasRutina;
     }
 
     
