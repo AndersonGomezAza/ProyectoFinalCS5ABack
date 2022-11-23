@@ -13,16 +13,18 @@ public class Maquinaria {
     
     private String nombreMaquinaria;
     private String descripcionMaquinaria;
+	private String estadoMaquinaria;
     private String categoriaMaquinaria;
     
     public Maquinaria() {
         
     }
 
-	public Maquinaria(int idMaquinaria, String nombreMaquinaria, String descripcioMaquinaria,String categoriaMaquinaria) {
+	public Maquinaria(int idMaquinaria, String nombreMaquinaria, String descripcioMaquinaria, String estadoMaquinaria,String categoriaMaquinaria) {
 		this.idMaquinaria = idMaquinaria;
 		this.nombreMaquinaria = nombreMaquinaria;
 		this.descripcionMaquinaria = descripcioMaquinaria;
+		this.estadoMaquinaria = estadoMaquinaria;
 		this.categoriaMaquinaria = categoriaMaquinaria;
 	}
 
@@ -56,6 +58,14 @@ public class Maquinaria {
 
 	public void setCategoriaMaquinaria(String categoriaMaquinaria) {
 		this.categoriaMaquinaria = categoriaMaquinaria;
+	}
+
+	public String getEstadoMaquinaria() {
+		return estadoMaquinaria;
+	}
+
+	public void setEstadoMaquinaria(String estadoMaquinaria) {
+		this.estadoMaquinaria = estadoMaquinaria;
 	}
     
     
