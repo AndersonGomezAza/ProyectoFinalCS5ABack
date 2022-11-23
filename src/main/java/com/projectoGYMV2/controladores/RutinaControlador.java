@@ -43,6 +43,7 @@ public class RutinaControlador {
             Rutina rutina = rutinaOptional.get();
             rutina.setNombreRutina(rutinaAct.getNombreRutina());
             rutina.setTiempoRutina(rutinaAct.getTiempoRutina());
+            rutina.setCaloriasRutina(rutinaAct.getCaloriasRutina());
             rutina.setDescripcionRutina(rutinaAct.getDescripcionRutina());
             rutinaServicio.actualizarRutina(rutina);
         }
