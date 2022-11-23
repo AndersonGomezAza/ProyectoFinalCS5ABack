@@ -7,10 +7,11 @@ import javax.persistence.*;
 public class Maquinaria {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(unique = true, nullable = false)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(unique = true, nullable = false)
     private int idMaquinaria;
     
+    private String serialMaquinaria;
     private String nombreMaquinaria;
     private String descripcionMaquinaria;
 	private String estadoMaquinaria;
@@ -20,8 +21,9 @@ public class Maquinaria {
         
     }
 
-	public Maquinaria(int idMaquinaria, String nombreMaquinaria, String descripcioMaquinaria, String estadoMaquinaria,String categoriaMaquinaria) {
+	public Maquinaria(int idMaquinaria, String serialMaquinaria, String nombreMaquinaria, String descripcioMaquinaria, String estadoMaquinaria,String categoriaMaquinaria) {
 		this.idMaquinaria = idMaquinaria;
+		this.serialMaquinaria = serialMaquinaria;
 		this.nombreMaquinaria = nombreMaquinaria;
 		this.descripcionMaquinaria = descripcioMaquinaria;
 		this.estadoMaquinaria = estadoMaquinaria;
@@ -66,6 +68,14 @@ public class Maquinaria {
 
 	public void setEstadoMaquinaria(String estadoMaquinaria) {
 		this.estadoMaquinaria = estadoMaquinaria;
+	}
+
+	public String getSerialMaquinaria() {
+		return serialMaquinaria;
+	}
+
+	public void setSerialMaquinaria(String serialMaquinaria) {
+		this.serialMaquinaria = serialMaquinaria;
 	}
     
     

@@ -41,6 +41,7 @@ public class MaquinariaControlador {
 	    Optional<Maquinaria> maquinariaOptional = maquinariaServicio.ListarMaquinariasId(idMaquinaria);
         if(maquinariaOptional.isPresent()) {
             Maquinaria maquinaria = maquinariaOptional.get();
+            maquinaria.setSerialMaquinaria(maquinariaAct.getSerialMaquinaria());
             maquinaria.setNombreMaquinaria(maquinariaAct.getNombreMaquinaria());
             maquinaria.setDescripcionMaquinaria(maquinariaAct.getDescripcionMaquinaria());
             maquinaria.setEstadoMaquinaria(maquinariaAct.getEstadoMaquinaria());
