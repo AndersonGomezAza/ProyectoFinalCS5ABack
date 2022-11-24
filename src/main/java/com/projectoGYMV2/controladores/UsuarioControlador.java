@@ -18,7 +18,7 @@ import com.projectoGYMV2.Servicios.UsuarioServicio;
 import com.projectoGYMV2.entidad.Usuario;
 
 @RestController
-@RequestMapping("/usuario")
+@RequestMapping(path = "/usuario")
 @CrossOrigin(origins = "http://localhost:4200")
 public class UsuarioControlador {
 
@@ -45,8 +45,8 @@ public class UsuarioControlador {
 	}
 
 	
-	@PutMapping("/{idUsuario}") 
-	Optional<Usuario> actualizarUsuarios(@PathVariable int numDocumento, @RequestBody Usuario usuarioAct) {
+	@PutMapping("/{id}") 
+	Optional<Usuario> actualizarUsuarios(@PathVariable("id") int numDocumento, @RequestBody Usuario usuarioAct) {
 	    Optional<Usuario> usuarioOptional = usuarioServicio.ListarUsuariosId(numDocumento);
 	    if(usuarioOptional.isPresent()) {
 	    	Usuario usuario = usuarioOptional.get();

@@ -12,9 +12,9 @@ import com.fasterxml.jackson.annotation.JsonFormat.Shape;
 public class Usuario {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(unique = true, nullable = false)
 	private int numDocumento;
+	
 	private String nombres;
 	@JsonFormat(pattern ="yyyy-MM-dd", shape = Shape.STRING)
 	private String fechaRegistro;
