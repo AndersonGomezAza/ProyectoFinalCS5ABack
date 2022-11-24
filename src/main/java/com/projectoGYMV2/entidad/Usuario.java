@@ -17,7 +17,6 @@ public class Usuario {
 	private int numDocumento;
 	private String nombres;
 	@JsonFormat(pattern ="yyyy-MM-dd", shape = Shape.STRING)
-	@Column(name = "fechaRegistro")
 	private String fechaRegistro;
 	private String tipoDoc;
 	private String rol;
