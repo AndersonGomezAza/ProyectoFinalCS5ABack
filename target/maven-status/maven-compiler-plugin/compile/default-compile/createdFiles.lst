@@ -1,0 +1,5 @@
+com\projectoGYMV2\Servicios\UsuarioServicio.class
+com\projectoGYMV2\Vista\UsuarioVista.class
+com\projectoGYMV2\controladores\UsuarioControlador.class
+com\projectoGYMV2\entidad\Usuario.class
+com\projectoGYMV2\Servicios\Interface\UsuarioInterfaceServicio.class
